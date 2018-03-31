@@ -2,9 +2,9 @@
 using System.Text;
 using System.Globalization;
 
-namespace DateRange
+namespace DateRangeNamespace
 {
-    class DateRange
+    public class DateRange
     {
         readonly string format = "dd.MM.yyyy";
 
