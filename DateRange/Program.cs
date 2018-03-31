@@ -7,9 +7,7 @@ namespace DateRangeNamespace
         static void ExitProgram(string msg)
         {
             if (!(msg == ""))
-            {
                 Console.WriteLine(msg);
-            }
             Console.WriteLine("Press any key...");
             Console.ReadKey();
             Environment.Exit(0);
@@ -17,10 +15,8 @@ namespace DateRangeNamespace
 
         static void Main(string[] args)
         {
-            if (args.Length > 2 || args.Length < 2)
-            {
+            if (args.Length != 2)
                 ExitProgram("Wrong number of arguments.");
-            }
             string firstDateString = args[0];
             string secondDateString = args[1];
             DateRange dateRange = new DateRange();

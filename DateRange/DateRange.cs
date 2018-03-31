@@ -11,7 +11,7 @@ namespace DateRangeNamespace
         public void ValidateDates(DateTime date1, DateTime date2)
         {
             if (DateTime.Compare(date1, date2) > 0)
-                throw new ArgumentException("The first date is not earlier than the second.");
+                throw new ArgumentException("The first date is not earlier or equal the second.");
         }
 
         public DateTime[] ParseDates(string dateString1, string dateString2)
